@@ -2,7 +2,7 @@
 #   Programming Assignment 4
 #     Prob-4.py
 
-# <YOUR NAME>
+# Mike Hart
 
 # Author: Bruce Elgort
 # Date: July 12, 2017
@@ -24,20 +24,27 @@ def coffeeProcessor():
     priceOfCoffee = 16.50
 
     # get number of pounds from user
-    quantity = evaluate(input("How many pounds of coffee would you like to order? )
+    # Correction: Added end quotation
+    # Correction: Added and ending parenthesis 
+    # Correction: 'evaluate' not valid; corrected to 'eval'
+    quantity = eval(input("How many pounds of coffee would you like to order?"))
     
     # Check number of pounds ordered
     # If less than or equal to 10 pounds we must charge for shipping
     if quantity <= 10:
         shippingPerPound = .76
-    else
+    # Correction: Added colon after 'else'
+    else:
         shippingPerPound = 0      
 
     # Calculate cost of order
-    costOfOrder = (quantity * priceOfCoffee) + (quntity * shippingPerPound) + overHead
+    # Correction: 'quantity" spelled wrong; corrected.
+    costOfOrder = (quantity * priceOfCoffee) + (quantity * shippingPerPound) + overHead
 
     # Print result
-    print(The cost of the order is:",costOfOrder)
+    # Correction: Added beginning quotation to line below
+    print("The cost of the order is:", costOfOrder)
 
 # start the program
-gocoffeeProcessor()
+# Correction: 'goCoffeeProcessor' not defined; corrected to 'coffeeProcessor'
+coffeeProcessor()
